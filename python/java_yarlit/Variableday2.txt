@@ -1,0 +1,76 @@
+class Variableday2{
+    public static void main(String args[]){
+	
+	    Byte b1;
+		b1=12;
+		System.out.println("Byete:"+b1);
+		
+		Byte b2;
+		b2=20;
+		System.out.println("Byete:"+b2);
+		
+		Short s1;
+		s1=32000;
+		System.out.println("Short:"+s1);
+		
+		Short s2;
+		s2=34500;
+		System.out.println("Short:"+s2);
+		
+		int i;
+		i=65022;
+		System.out.println("Int:"+i);
+		
+		int i1;
+		i1=50833;
+		System.out.println("Int:"+i1);
+		
+		long l;
+		1=65022655865L;
+		System.out.println("Long:"+1);
+		
+		long l1;
+		11=650226545678L;
+		System.out.println("Long:"+11);
+		
+		float f1;
+		f1=25.6f;
+		System.out.println("Float:"+b1);
+		
+		float f2;
+		f2=45.3f;
+		System.out.println("Float:"+b2);
+		
+		double db;
+		db=86.35D;
+		System.out.println("double:"+db);
+		
+		double db1;
+		db1=35.75D;
+		System.out.println("double:"+db1);
+		
+		Byte b1;
+		b1=12;
+		System.out.println("Byete:"+b1);
+		
+		Byte b2;
+		b2=56;
+		System.out.println("Byete:"+b2);
+		
+		boolean bool;
+		bool=true;
+		System.out.println("Boolean:"+bool);
+		
+		boolean bool1;
+		bool1=false;
+		System.out.println("Boolean:"+bool1);
+		
+		char ch;
+		ch='A';
+		System.out.println("Char:"+ch);
+		
+		char ch1;
+		ch1='b';
+		System.out.println("Char:"+ch1);
+	}
+}

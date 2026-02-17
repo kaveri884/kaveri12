@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food & Wine Store</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #e3eff0;
+    }
+
+    .navbar {
+      background-color: #f6f8fa; 
+      padding: 15px;
+    }
+
+    .navbar-brand {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #f10b0b !important; 
+    }
+
+    .nav-link {
+      color: #0544f3 !important; 
+      margin-left: 10px;
+      transition: color 0.3s ease;
+    }
+
+    .nav-link:hover {
+      color: #d61737 !important; 
+    }
+
+    .hero-section {
+      color: #0e0d0d;
+      text-align: center;
+      padding: 6rem 1rem;
+    }
+
+    .hero-section h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .hero-section p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+
+    .hero-section .btn-primary {
+      background-color: #ff5722;
+      border-color: #ff5722;
+      font-size: 1.2rem;
+      padding: 10px 20px;
+      text-transform: uppercase;
+    }
+
+    .hero-section .btn-primary:hover {
+      background-color: #e64a19;
+      border-color: #e64a19;
+    }
+
+    section {
+      padding: 100px 20px;
+      margin-top: 50px; 
+    }
+
+    .footer {
+      background-color: #1a1919;
+      color: #f5f0f0;
+      padding: 40px 20px;
+      font-family: Arial, sans-serif;
+    }
+
+    .footer a {
+      color: #1e90ff;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    .footer-content p {
+      margin: 5px 0;
+      font-size: 14px;
+    }
+
+    .footer-social a {
+      margin: 0 5px;
+      font-size: 14px;
+    }
+
+    /* Scrolling banner */
+    .scrolling {
+      display: flex;
+      gap: 10px;
+      background: linear-gradient(to right, #76b852, #8e0e00, blue, red, pink);
+      padding: 25px;
+      animation: scroll 15s linear infinite;
+      overflow: hidden;
+      width: 100%;
+    }
+
+    @keyframes scroll {
+      from { transform: translateX(100%); }
+      to   { transform: translateX(-100%); }
+    }
+
+    .scrolling:hover {
+      animation-play-state: paused;
+    }
+
+    .scrolling img {
+      height: 150px;
+      width: auto;
+      border-radius: 50px;
+      flex-shrink: 0;
+    }
+
+    .scrolling-text {
+      display: inline-block;
+      white-space: nowrap;
+      font-size: 2.5rem;
+      font-weight: bold;
+      background: linear-gradient(to right, #f10b0b, black, green, greenyellow);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: scrollText 12s linear infinite;
+    }
+
+    @keyframes scrollText {
+      from { transform: translateX(100%); }
+      to   { transform: translateX(-100%); }
+    }
+
+    @media (max-width: 768px) {
+      .footer-container {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+</head> 
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">NILSHAN Convention Food & Wine</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="wine2.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="wine.html">Main Menu</a></li>
+          <li class="nav-item">
+            <select class="form-select ms-2" onchange="openWinePage(this.value)">
+              <option selected disabled>Choose Wine</option>
+              <option value="wine.html">Red Wine</option>
+              <option value="whitewine.html">White Wine</option>
+              <option value="rosewine.html">Rosé</option>
+              <option value="redwine.html">Redwine</option>
+            </select>
+          </li> 
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Heading -->
+  <header class="text-center my-4">
+    <h1 class="scrolling-text">𝙽𝙸𝙻𝚂𝙷𝙰𝙽 Convention Food & Wine Shop</h1>
+  </header>
+
+  <!-- Hero Section with Carousel -->
+  <section id="home" class="hero-section">
+    <h1>Food & Wine</h1>
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/vegetables.jpg" class="d-block w-100" alt="Fresh vegetables" style="height:400px; object-fit:cover;">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First Slide</h5>
+            <p>Description for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/winebackground (1).jpg" class="d-block w-100" alt="Wine bottles" style="height:400px; object-fit:cover;">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second Slide</h5>
+            <p>Description for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/winebackground (2).jpg" class="d-block w-100" alt="Wine tasting event" style="height:400px; object-fit:cover;">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third Slide</h5>
+            <p>Description for the third slide.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Scrolling Banner -->
+  <div class="scrolling">
+    <img src="images/vegetables.jpg" alt="Fresh vegetables">
+    <img src="images/vegetables.jpg" alt="Fresh vegetables">
+    <img src="images/vegetables.jpg" alt="Fresh vegetables">
+    <img src="images/vegetables.jpg" alt="Fresh vegetables">
+    <img src="images/vegetables.jpg" alt="Fresh vegetables">
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container row">
+      <div class="footer-content col-md-4">
+        <p><strong>Contact Us:</strong></p>
+        <p>📧 Email: <a href="mailto:nilshan@gmail.com">nilshan@gmail.com</a></p>
+        <p>📍 Address: <a href="#">United Kingdom</a></p>
+        <p>📞 Phone: <a href="tel:+441922351007">+44 1922 351007</a></p>
+      </div

@@ -1,0 +1,163 @@
+<head>
+  <title>Create Student Details</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" 
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
+        crossorigin="anonymous">
+  <style>
+    body {
+      background-color: hsl(200, 76%, 30%); 
+    }
+    .center-container {
+      min-height: 100vh; 
+      display: flex;
+      justify-content: center;
+      align-items: center; 
+    }
+    .card {
+      width: 700px;
+      background-color: lightpink; 
+    }
+  </style>
+</head>
+<body>
+
+<div class="container center-container">
+  <div class="card shadow">
+    <div class="card-header bg-white text-black text-center">
+      School System
+    </div>
+    <div class="card-body">
+      <form action="/submitEmployee" method="POST" novalidate>
+        
+      
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="fname">First Name</label>
+            <input type="text" class="form-control" id="fname" name="fname" placeholder="First Name" required>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="lname">Last Name</label>
+            <input type="text" class="form-control" id="lname" name="lname" placeholder="Last Name" required>
+          </div>
+        </div>
+        
+     
+        <div class="form-group">
+          <label for="inputPassword5">Password</label>
+          <input type="password" id="inputPassword5" class="form-control" name="password" aria-describedby="passwordHelpBlock" required>
+          <small id="passwordHelpBlock" class="form-text text-muted">
+            Your password must be 8–20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+          </small>
+        </div>
+
+        
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Email</label>
+            <input type="email" class="form-control" id="inputEmail4" name="email" placeholder="Email" required>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="validationCustomUsername">Username</label>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text">@</span>
+              </div>
+              <input type="text" class="form-control" id="validationCustomUsername" name="username" placeholder="Username" required>
+              <div class="invalid-feedback">Please choose a username.</div>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="form-group">
+          <label for="inputAddress">Address</label>
+          <input type="text" class="form-control" id="inputAddress" name="address" placeholder="Address">
+        </div>
+        <div class="form-group">
+          <label for="inputAddress2">Address 2</label>
+          <input type="text" class="form-control" id="inputAddress2" name="address2" placeholder="Address 2">
+        </div>
+
+        
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputCity">City</label>
+            <input type="text" class="form-control" id="inputCity" name="city">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputState">Country</label>
+            <select id="inputState" name="state" class="form-control" required>
+              <option selected disabled>Choose...</option>
+              <option>Jaffna</option>
+              <option>Kilinochchi</option>
+              <option>Mannar</option>
+              <option>Vavuniya</option>
+              <option>Mullaithevu</option>
+              <option>Puthukkudiyirupu</option>
+              <option>Colombo</option>
+              <option>Kandy</option>
+              <option>Matara</option>
+            </select>
+          </div>
+          <div class="form-group col-md-2">
+            <label for="inputZip">Zip</label>
+            <input type="text" class="form-control" id="inputZip" name="zip">
+          </div>
+        </div>
+
+        
+        <div class="form-group form-check">
+          <input class="form-check-input" type="checkbox" id="gridCheck" name="check">
+          <label class="form-check-label" for="gridCheck">Check me out</label>
+        </div>
+
+       
+        <fieldset class="form-group">
+          <legend>Radios</legend>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+            <label class="form-check-label" for="gridRadios1">First radio</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+            <label class="form-check-label" for="gridRadios2">Second radio</label>
+          </div>
+        </fieldset>
+
+        
+        <div class="form-row align-items-center">
+          <div class="col-auto my-1">
+            <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" name="subject" required>
+              <option selected disabled>Choose Subject</option>
+              <option value="1">Foundation</option>
+              <option value="2">Diploma</option>
+              <option value="3">HND</option>
+              <option value="4">Degree</option>
+              <option value="5">Masters</option>
+              <option value="6">Top-Up</option>
+            </select>
+          </div>
+          <div class="col-auto my-1">
+            <div class="custom-control custom-checkbox mr-sm-2">
+              <input type="checkbox" class="custom-control-input" id="customControlAutosizing" name="remember">
+              <label class="custom-control-label" for="customControlAutosizing">Remember my preference</label>
+            </div>
+          </div>
+        </div>
+        
+        
+        <div class="form-group">
+          <label for="formControlRange">Example Range input</label>
+          <input type="range" class="form-control-range" id="formControlRange" name="range">
+        </div>
+
+        
+        <button type="submit" class="btn btn-primary mt-3">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

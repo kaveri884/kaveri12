@@ -1,0 +1,99 @@
+<html>
+<head>
+  <title>Show Student Details</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f9fa; 
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .card {
+      width: 700px;
+      background-color: #ffffff; 
+    }
+    .card-header {
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    .student-photo {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+<div class="card shadow-lg">
+  <div class="card-header text-center bg-light">
+    Student Details
+  </div>
+  
+  <div class="text-center mt-3">
+    <img src="https://i.pinimg.com/564x/bf/ab/81/bfab81fb8b7a9bbf6335c2e3779dcaa2.jpg" 
+         alt="Student photo" class="rounded-circle shadow-sm student-photo">
+  </div>
+  
+  <div class="card-body p-4">
+    <table class="table table-bordered table-striped">
+      <tbody>
+        <tr>
+          <th>First Name</th>
+          <td>Kaveri</td>
+        </tr>
+        <tr>
+          <th>Last Name</th>
+          <td>Kannan</td>
+        </tr>
+        <tr>
+          <th>Admission Number</th>
+          <td>8934</td>
+        </tr>
+        <tr>
+          <th>NIC Number</th>
+          <td>453789231</td>
+        </tr>
+        <tr>
+          <th>Address</th>
+          <td>Jaffna</td>
+        </tr>
+        <tr>
+          <th>Birthday</th>
+          <td>2001-12-12</td>
+        </tr>
+        <tr>
+          <th>Phone Number</th>
+          <td>+94 76 548934</td>
+        </tr>
+        <tr>
+          <th>Gender</th>
+          <td>Female</td>
+        </tr>
+        <tr>
+          <th>Subjects</th>
+          <td>Arts</td>
+        </tr>
+        <tr>
+          <th>Course</th>
+          <td>Degree</td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <div class="text-center mt-3">
+	<a href="School System.html" class="btn btn-secondary">
+        <i class="bi bi-arrow-left"></i> Back
+      </a>
+      <a href="Edit Student.html" class="btn btn-success me-2">
+        <i class="bi bi-pencil-square"></i> Edit
+      </a>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

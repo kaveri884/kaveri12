@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=tab, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1" height="100%" width="100%">
+        
+        <tr>
+            <td colspan="2" width="100%" hight="100%"><h2>header</h2></td>
+        </tr>
+        
+        <tr>
+            <td>
+                <ul>
+                    <li><a href="home.html" id="home">home</a></li>
+                     <li><a href="about.html" id="about">about</a></li>
+                      <li><a href="contact.html" id="contact">contact</a></li>
+                </ul>
+            </td>
+            <td width="80%" hight="80%" id="contant">
+                ADD
+            </td>
+        </tr>
+        <tr class="footer">
+            <td colspan="2" width="100%" hight="10%">footer</td>
+        </tr>
+    </table>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+    $(function(){
+        $('#home').click(function(e){
+            e.preventDefault();
+            //alert("welcome to ");
+            $("#contant").load("home.html");
+        });
+        $('#about').click(function(e){
+             e.preventDefault();
+            $("#contant").load("about.html");
+        });
+        $('#contact').click(function(e){
+            e.preventDefault();
+            $("#contant").load("contact.html");
+        });
+
+    });
+</script>
+</body>
+</html>

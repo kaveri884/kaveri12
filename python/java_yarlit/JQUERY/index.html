@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <h1>welcome to jquery</h1>
+    <h1 id="first">welcome to query</h1>
+    <h1 class="second">second query</h1>
+    <button>click me</button>
+    <h2></h2>
+    <br>
+    <br>
+    <input type="text"id="fname"name="fname">
+    <button id="btn2">click me</button>
+    <script>
+    /*$(document).ready(function(){
+        alert("welcome query");
+    });*/
+    
+    // myfunction=function(){
+    //     alert("welcome query");
+    // };
+
+    // $(function(){
+    //     $('button').click(function(){
+    //         let name=$("h1").text();
+    //         alert(name);
+    //     })
+    // });
+
+    // $(function(){
+    //     $('button').click(function(){
+    //         let name=$("h1").text();
+    //         $("h2").text(name);
+    //     })
+    // });
+    
+    $(function(){
+        $('button').click(function(){
+            let name=$("#first").text();
+            $("h2").text(name);
+        })
+        
+        $('btn2').click(function(){
+            let name=$("#fname").text();
+            $("h3").text(firstname);
+        })
+    });
+    
+
+    
+
+    
+    </script>
+
+    
+    
+
+</body>
+</html>

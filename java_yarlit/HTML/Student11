@@ -1,0 +1,89 @@
+
+<html>
+<head>
+	
+  <style>
+	table,th,td{
+	border:2px solid black;
+	border-collapse:collapse;
+	}
+	th,td{
+	padding:15px;
+	}
+    table.center {
+      margin-left: auto;
+      margin-right: auto;
+      width: 60%;
+    }
+    .button-container {
+      width: 60%;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: right; 
+      margin-bottom: 10px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+<form>
+ <h2>Student</h2>
+  <div class="button-container">
+      <button type="submit"><a href="Create Student.html">Create</a></button>
+    </div>
+	<table class="center">
+		<tr>
+		<th>First Name</th>
+		<th>Last Name</th>
+		<th>Email</th>
+		<th>Telephone Number</th>
+		<th>Address</th>
+		</tr>
+		
+		<tr>
+		<td>Kannan </td>
+		<td>Kaveri</td>
+		<td>Kavi@gmail.com</td>
+		<td>076548934</td>
+		<td>point pedtro</td>
+		</tr>
+		
+		<tr>
+		<td>paramalingam </td>
+		<td>sivanesan</td>
+		<td>siva@gmail.com</td>
+		<td>076548376</td>
+		<td>point pedtro,VM road</td>
+		</tr>
+		
+		<tr>
+		<td>kalaiselvan </td>
+		<td>Ashnika</td>
+		<td>Ashni@gmail.com</td>
+		<td>076563892</td>
+		<td>canada</td>
+		</tr>
+		
+		<tr>
+		<td>Kalaiselvan </td>
+		<td>kabila</td>
+		<td>Kabi@gmail.com</td>
+		<td>076532145</td>
+		<td>canada</td>
+		</tr>
+		
+		<tr>
+		<td>sivan </td>
+		<td>Kavi</td>
+		<td>siva@gmail.com</td>
+		<td>076589754</td>
+		<td>UK</td>
+		</tr>
+		</form>
+	</table>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery</title>
+     
+</head>
+<body>
+    
+    <label>num 1:</label>
+    <input type="number"id="num1"name="num1">
+
+    <label>num 2:</label>
+    <input type="number"id="num2"name="num2">
+
+
+    <button id="add">+</button>
+    <button id="sub">-</button>
+    <button id="mal">*</button>
+    <button id="div">%</button>
+
+    <br></br>
+    <label>output</label>
+    <input type="number"id="output"name="output">
+   
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+    $(function(){
+        $('#add').click(function(){
+            let num1=Number($("#num1").val());
+            let num2=Number($("#num2").val());
+            let add=num1+num2;
+            $("#output").val(add);
+        });
+        $('#sub').click(function(){
+            let num1=Number($("#num1").val());
+            let num2=Number($("#num2").val());
+            let add=num1-num2;
+            $("#output").val(add);
+        });
+        $('#mal').click(function(){
+            let num1=Number($("#num1").val());
+            let num2=Number($("#num2").val());
+            let add=num1*num2;
+            $("#output").val(add);
+        });
+        $('#div').click(function(){
+            let num1=Number($("#num1").val());
+            let num2=Number($("#num2").val());
+            let add=num1%num2;
+            $("#output").val(add);
+        })
+    });
+    </script>
+</body>
+</html>
